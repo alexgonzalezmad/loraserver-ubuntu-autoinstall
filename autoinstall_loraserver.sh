@@ -14,6 +14,7 @@
 sudo apt-get install mosquitto
 sudo apt-get install postgresql
 sudo apt-get install redis-server
+sudo apt-get install git 
 
 # configurar base de loraserver network server 
 
