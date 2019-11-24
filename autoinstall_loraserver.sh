@@ -14,6 +14,7 @@
 sudo apt-get install mosquitto
 sudo apt-get install postgresql
 sudo apt-get install redis-server
+
 # configurar base de loraserver network server 
 
 sudo -i -u postgres psql -c "create role chirpstack_ns with login password 'dbpassword';"
@@ -36,7 +37,14 @@ sudo apt-get update
 
 # instalación application server y network server 
 
-
 sudo apt-get install chirpstack-network-server
 sudo apt-get install chirpstack-application-server
+
+# bajar configuracuibes de loraserver 
+
+mkdir -p /home/alexgm/loraserver-cfg
+cd /home/alexgm/loraserver-cfg
+git clone https://github.com/alexgonzalezmad/loraserver-ubuntu-autoinstall.git
+
+
 
